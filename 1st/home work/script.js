@@ -4,7 +4,7 @@ var mainList = {
 	marketName: "",
 	shopGoods: [],
 	employers: {},
-	open: ""
+	open: false
 };
 // присваеваем значение и выводим бюджет на 1 день 
 var earn = prompt("Ваш бюджет на месяц?");
