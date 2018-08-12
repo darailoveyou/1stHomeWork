@@ -9,7 +9,8 @@ var mainList = {
 // присваеваем значение и выводим бюджет на 1 день 
 var earn = prompt("Ваш бюджет на месяц?");
 	mainList.incom = earn;
-	alert(earn/30)
+	console.log(earn);
+	alert(earn/30);
 
 // сохраняем имя магазина в обьект mainList 
 var marketName = prompt("Название вашего магазина?");
@@ -20,8 +21,8 @@ var marketName = prompt("Название вашего магазина?");
 for (var i = 0; i < 3; i++) {
 
 	let ans = prompt("Какой тип товаров будем продавать?");
-		mainList.shopGoods.push(ans);
-		console.log(mainList.shopGoods);
+		mainList.shopGoods[i] = ans;
 };
+console.log(mainList);
 
 
