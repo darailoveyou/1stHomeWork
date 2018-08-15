@@ -41,17 +41,16 @@ function chooseGoods () {
 
 
 // Функция выдающая дневной бюджет 
-function spendMoneyDay(momey){
-	let x = money / 30;
+function dayBudget(){
+	let x = mainList.money / 30;
 	console.log('Дневной бюджет = ' + Math.round(x));
 }
 
 
 // Функция скидок 
-function discount (price) {
+function discount () {
 	if (mainList.discount === true) {
-		let newPrice = price * 0.8;
-		console.log(newPrice);
+		price = price * 0.8;
 	} else {
 		return false;
 	}
@@ -60,16 +59,13 @@ function discount (price) {
 
 // Функция найма сотрудников 
 function employers() {
-	let y = 0;
-	
 	for(var i = 0; i < 4; i++) {
 		let x = prompt('Имя сотрудника ?');
 
 		while ((typeof(x)) != 'string' || x == null || x == '') {
 			x = prompt('Имя сотрудника ?');
 		}
-		y++
-		mainList.employers[i] = y + ' - ' + x;
+		mainList.employers[i] = x;
 	}
 }
 employers();
