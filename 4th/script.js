@@ -77,7 +77,7 @@ var mainList = {
 		mainList.shopItems.sort();
 
 		mainList.shopItems.forEach(function(element) {
-  			alert('У нас вы можете купить ' + t++ + ' - ' + element);
+  			alert('У нас вы можете купить ' + ${t++} + ' - ' + ${element});
 		});
 
 		for (let key in mainList.shopItems) { 
